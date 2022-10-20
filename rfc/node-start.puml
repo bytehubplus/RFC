@@ -7,6 +7,10 @@ repeat: Node Connection
 : Establish GRPC connection with node x;
 repeat while (more node?) is (yes)
 ->no;
+repeat: Load plugins 
+: Load plugin x;
+repeat while (more plugin?) is (yes)
+->no;
 : Prepare Vault;
 : Start REST to Server Client;
 end
