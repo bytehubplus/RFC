@@ -1,0 +1,13 @@
+@startuml
+start 
+: Load node conf;
+: Setup node Signature Key;
+repeat: Node Connection 
+: Load Comm Conf for node x;
+: Establish GRPC connection with node x;
+repeat while (more node?) is (yes)
+->no;
+: Prepare Vault;
+: Start REST to Server Client;
+end
+@enduml
