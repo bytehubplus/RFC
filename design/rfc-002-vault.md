@@ -1,6 +1,6 @@
 # Vault
 
-Vault 是核心组件，负责处理用户数据的存储逻辑。向上对其他组件、应用提供访问接口，向下支持不同的持久化存储，例如键值数据库、关系数据库、区块链等。
+Vault 是核心组件，负责处理用户数据的存储逻辑和访问控制逻辑。向上对其他组件、应用提供访问接口，向下支持不同的持久化存储，例如键值数据库、关系数据库、区块链等。
 
 ![Vault](./images/Vault-Arch.png)
 
@@ -8,7 +8,17 @@ Vault 是核心组件，负责处理用户数据的存储逻辑。向上对其�
 
 Vault 按照 Section（区）划分数据，默认数据存储在 Primary 区。与其他人协助的数据存储在其他区。
 
-## 协助区
+![Vault Section](./images/Vault-Section.png)
+
+## Meta Section
+
+__Meta Section__ 存储 Vault 相关的元数据、访问控制数据等，该区数据不允许共享。
+
+## Primary Section
+
+__Primary Section__ 存储用户自己的数据。
+
+## Collabrative Section
 
 每个 Vault 可以有若干个协作区，其他用户可以向协作区进行读写数据，以实现用户之间的协助。协作区拥有唯一的区号，区号默认为对方的 Vault ID 或者是 Byte Factory 的 ID。
 
