@@ -1,10 +1,10 @@
 # REST API Definitions
 
-**作者：赵振华**
+__作者：赵振华__
 
-**日期：2022年11月1日**
+__日期：2022年11月1日__
 
-**版本: 1.0**
+__版本: 1.0__
 
 ## API 规范
 
@@ -15,12 +15,12 @@
 
 URL 规则
 
-**https://api.node_domain.com/version/**
+__https://api.node_domain.com/version/__
 
-其中**node_domain.com**为节点域名，**version**为 API 版本，目前为 1。
-例如：**https://api.bytehubplus.com/1/vault/register**
+其中__node_domain.com__为节点域名，__version__为 API 版本，目前为 1。
+例如：__https://api.bytehubplus.com/1/vault/register__
 
-**Content-Type: application/json**
+__Content-Type: application/json__
 
 ## Vault Management
 
@@ -33,7 +33,7 @@ URL 规则
 
 Key information in JSON format, for more information refer to [Verification Methods Properties](https://www.w3.org/TR/did-core/#verification-method-properties)
 
-**Request JSON Body**
+__Request JSON Body__
 
 ```json
 {
@@ -59,7 +59,7 @@ Key information in JSON format, for more information refer to [Verification Meth
 
 ### 2. Unregister
 
-**Request JSON Body**
+__Request JSON Body__
 
 ```json
 {
@@ -116,7 +116,7 @@ Request JSON body
 
 ### 1. Put
 
-**Request JSON Body**
+__Request JSON Body__
 
 ```json
 {
@@ -126,7 +126,7 @@ Request JSON body
 }
 ```
 
-**Response**
+__Response__
 
 ```json
 {
@@ -144,7 +144,7 @@ Request JSON body
 }
 ```
 
-**Response**
+__Response__
 
 ```json
 {

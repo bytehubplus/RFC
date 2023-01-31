@@ -6,13 +6,13 @@ Bytehub+ 致力于创建去中心化可信基础设施！**Fusion** 是 Bytehub+
 
 ## 图1：架构图
 
-![架构图](./images/architecture.png)
+![架构图](./architecture.png)
 
 ## Tech Stack
 
 ### 图2：分层架构
 
-![分层架构图](./images/layered-arch.png)
+![分层架构图](./layered-arch.png)
 
 ### Layer 1
 
